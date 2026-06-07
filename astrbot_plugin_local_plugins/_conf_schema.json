@@ -1,0 +1,8 @@
+{
+  "exclude_plugins": {
+    "type": "list",
+    "description": "在列表中隐藏的插件名，如 astrbot_plugin_xxx",
+    "hint": "多个插件用逗号分隔",
+    "default": []
+  }
+}

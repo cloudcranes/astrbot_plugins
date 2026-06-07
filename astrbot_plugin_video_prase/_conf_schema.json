@@ -1,0 +1,50 @@
+{
+  "api_base_url": {
+    "type": "string",
+    "description": "parse-video-py 服务基地址",
+    "default": "http://127.0.0.1:8000",
+    "hint": "例如 http://127.0.0.1:8000"
+  },
+  "api_parse_path": {
+    "type": "string",
+    "description": "解析接口路径",
+    "default": "/video/share/url/parse",
+    "hint": "默认 parse-video-py Web 路由"
+  },
+  "image_proxy_prefix": {
+    "type": "string",
+    "description": "图片/视频代理前缀",
+    "default": "",
+    "hint": "留空则不使用代理。主要用于 X/Twitter 媒体"
+  },
+  "timeout": {
+    "type": "int",
+    "description": "请求超时时间",
+    "default": 30,
+    "hint": "单位：秒"
+  },
+  "send_method": {
+    "type": "string",
+    "description": "消息发送方式",
+    "options": ["yield", "nodes"],
+    "default": "yield"
+  },
+  "MAX_MEDIA": {
+    "type": "int",
+    "description": "图集/LivePhoto 最大发送数量",
+    "default": 6,
+    "hint": "默认 6，最大建议不超过 12"
+  },
+  "SEND_LIVE_PHOTO_AS_VIDEO": {
+    "type": "bool",
+    "description": "是否将 live_photo_url 按视频发送",
+    "default": true,
+    "hint": "开启后会把 live_photo_url 作为 Video 消息下发"
+  },
+  "SHOW_AUTHOR_AVATAR": {
+    "type": "bool",
+    "description": "nodes 模式是否内嵌作者头像",
+    "default": false,
+    "hint": "仅对 send_method=nodes 生效"
+  }
+}

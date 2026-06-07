@@ -1,0 +1,14 @@
+{
+  "whitelist": {
+    "type": "list",
+    "description": "用户白名单，允许执行敏感操作的用户ID",
+    "hint": "留空则允许所有人使用，install/uninstall/search 需配置白名单",
+    "default": []
+  },
+  "mirror": {
+    "type": "string",
+    "description": "PyPI 软件源",
+    "options": ["default", "tsinghua", "aliyun", "ustc", "douban", "huawei"],
+    "default": "default"
+  }
+}

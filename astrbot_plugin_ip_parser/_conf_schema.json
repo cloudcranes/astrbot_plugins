@@ -1,0 +1,36 @@
+{
+  "auto_parse_plain": {
+    "type": "bool",
+    "description": "是否自动解析纯文本 IP",
+    "hint": "开启后，发送纯 IPv4/IPv6 字符串会自动触发解析",
+    "default": true
+  },
+  "enable_ip_profile": {
+    "type": "bool",
+    "description": "是否启用运营商与归属地查询",
+    "hint": "开启后会请求在线 IP 画像接口",
+    "default": true
+  },
+  "skip_non_global_lookup": {
+    "type": "bool",
+    "description": "是否跳过非公网地址查询",
+    "hint": "内网/回环/链路本地地址通常无公网归属地信息",
+    "default": true
+  },
+  "profile_provider": {
+    "type": "string",
+    "description": "IP 画像提供方",
+    "hint": "auto 会自动回退，先 ip-api 后 ipinfo",
+    "default": "auto",
+    "options": [
+      "auto",
+      "ip-api",
+      "ipinfo"
+    ]
+  },
+  "profile_timeout_sec": {
+    "type": "int",
+    "description": "IP 画像查询超时秒数",
+    "default": 8
+  }
+}

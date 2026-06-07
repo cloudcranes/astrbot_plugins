@@ -1,0 +1,44 @@
+{
+  "pboc_index_url": {
+    "type": "string",
+    "description": "人行 LPR 公告列表页 URL（主数据源）",
+    "hint": "默认使用货币政策司 LPR 栏目首页，通常无需修改",
+    "default": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125440/3876551/index.html"
+  },
+  "chinamoney_api_url": {
+    "type": "string",
+    "description": "拆借中心官网 LPR 历史 API（兜底源）",
+    "hint": "当人行主站抓取失败时使用",
+    "default": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN"
+  },
+  "enable_chinamoney_fallback": {
+    "type": "bool",
+    "description": "是否启用拆借中心官网兜底",
+    "hint": "关闭后仅使用人行主站，主站失败将直接报错",
+    "default": true
+  },
+  "http_timeout_sec": {
+    "type": "int",
+    "description": "官网请求超时时间（秒）",
+    "hint": "建议 10-20 秒，范围会被限制在 3-60",
+    "default": 15
+  },
+  "default_interest_enabled": {
+    "type": "bool",
+    "description": "新增借款默认是否计息",
+    "hint": "当 /loan add 未显式传入计息开关时使用该默认值",
+    "default": true
+  },
+  "enable_user_whitelist": {
+    "type": "bool",
+    "description": "是否启用用户白名单",
+    "hint": "启用后权限规则为“管理员或白名单”；关闭后仅管理员可用",
+    "default": true
+  },
+  "user_whitelist": {
+    "type": "string",
+    "description": "用户白名单（全局用户ID）",
+    "hint": "支持逗号或换行分隔多个用户ID，例如：10001,10002 或每行一个",
+    "default": ""
+  }
+}

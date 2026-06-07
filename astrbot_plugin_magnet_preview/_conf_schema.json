@@ -1,0 +1,68 @@
+{
+  "IMAGE_DOMAIN_REPLACEMENT": {
+    "description": "图片域名替换地址，用于替换whatslink.info域名，优先使用此配置",
+    "type": "string",
+    "hint": "选填项。用于图片域名替换的自定义地址",
+    "default": ""
+  },
+  "WHATSLINK_URL": {
+    "description": "whatslink.info 代理地址（向后兼容）",
+    "type": "string",
+    "hint": "选填项。用于磁链解析 API 的自定义地址",
+    "default": "https://whatslink.info"
+  },
+  "MAX_IMAGES": {
+    "description": "最大返回图片数，最多9张",
+    "type": "int",
+    "hint": "选填项，默认 9",
+    "default": 9
+  },
+  "USE_FORWARD_MESSAGE": {
+    "description": "是否使用合并转发消息格式",
+    "type": "bool",
+    "hint": "选填项。aiocqhttp 平台默认合并转发；其他平台按此开关生效",
+    "default": true
+  },
+  "CACHE_TTL_SECONDS": {
+    "description": "磁链解析结果缓存秒数",
+    "type": "int",
+    "hint": "选填项，默认 600（10分钟）",
+    "default": 600
+  },
+  "PENDING_TTL_SECONDS": {
+    "description": "解析后等待用户确认下载的秒数",
+    "type": "int",
+    "hint": "选填项，默认 600（10分钟）",
+    "default": 600
+  },
+  "DEFAULT_DOWNLOADER": {
+    "description": "默认下载器，可选 qbittorrent 或 aria2",
+    "type": "string",
+    "hint": "现只支持 xunlei",
+    "default": "xunlei"
+  },
+  "XUNLEI_HOST": {
+    "description": "迅雷Docker容器主机地址",
+    "type": "string",
+    "hint": "例如 192.168.1.100",
+    "default": ""
+  },
+  "XUNLEI_PORT": {
+    "description": "迅雷Docker容器端口",
+    "type": "string",
+    "hint": "cnk3x/xunlei 映射的端口",
+    "default": ""
+  },
+  "XUNLEI_SSL": {
+    "description": "是否使用HTTPS连接",
+    "type": "bool",
+    "hint": "默认否",
+    "default": false
+  },
+  "XUNLEI_PLATFORM": {
+    "description": "平台类型: docker 或 fnos",
+    "type": "string",
+    "hint": "docker 或 fnos",
+    "default": "docker"
+  }
+}

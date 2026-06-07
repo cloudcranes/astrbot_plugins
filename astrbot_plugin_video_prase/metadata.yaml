@@ -1,0 +1,6 @@
+name: astrbot_plugin_video_parse
+version: 2.0.0
+author: cloudcranes
+description: 适配 parse-video-py 返回结构，支持视频/图集/live photo 统一渲染
+repo: https://github.com/cloudcranes/astrbot_plugins/astrbot_plugin_video_parse
+display_name: 链接解析插件

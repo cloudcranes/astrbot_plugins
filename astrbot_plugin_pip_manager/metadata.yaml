@@ -1,0 +1,5 @@
+name: astrbot_plugin_pip_manager
+desc: Pip 管理插件，可用于安装、卸载、查看 Python 包
+version: 1.0.0
+author: cloudcranes
+repo: https://github.com/cloudcranes/astrbot_plugins/astrbot_plugin_pip_manager

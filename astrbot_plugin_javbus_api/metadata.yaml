@@ -1,0 +1,6 @@
+name: astrbot_plugin_javbus_api
+desc: 基于 javbus-api 的 JavBus 解析插件
+version: 0.1.0
+author: cloudcranes
+repo: https://github.com/cloudcranes/astrbot_plugins/astrbot_plugin_javbus_api
+display_name: JavBus API 解析器

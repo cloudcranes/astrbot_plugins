@@ -1,0 +1,5 @@
+name: astrbot_plugin_local_plugins
+desc: 查询已加载插件的名称、版本、作者、描述等信息
+version: v1.0.0
+author: cloudcranes
+repo: https://github.com/cloudcranes/astrbot_plugins/astrbot_plugin_local_plugins

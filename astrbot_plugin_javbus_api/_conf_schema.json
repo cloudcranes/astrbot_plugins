@@ -1,0 +1,59 @@
+{
+  "base_url": {
+    "type": "string",
+    "description": "JavBus API 基础地址",
+    "hint": "默认已填当前可用线上地址",
+    "default": "https://javbus-api-from-ovnrain-git-main-cloudcranes-projects-58ddcac5.vercel.app"
+  },
+  "auth_token": {
+    "type": "string",
+    "description": "可选的 j-auth-token",
+    "hint": "如果服务端启用了 Token 鉴权，请填写",
+    "default": ""
+  },
+  "timeout_sec": {
+    "type": "int",
+    "description": "请求超时秒数",
+    "default": 20
+  },
+  "auto_shortcut": {
+    "type": "bool",
+    "description": "是否启用番号快捷解析",
+    "hint": "开启后，直接发送番号文本会自动触发详情+磁力摘要",
+    "default": true
+  },
+  "default_page_size": {
+    "type": "int",
+    "description": "默认展示条数",
+    "hint": "列表/搜索/磁力每次最多展示该条数",
+    "default": 10
+  },
+  "send_cover": {
+    "type": "bool",
+    "description": "是否发送封面图",
+    "default": true
+  },
+  "image_proxy_enable": {
+    "type": "bool",
+    "description": "是否启用 JavBus 图片代理",
+    "hint": "开启后会将 javbus 图片地址改写到代理域名",
+    "default": true
+  },
+  "image_proxy_base": {
+    "type": "string",
+    "description": "图片代理基础地址",
+    "hint": "默认: http://javbus.img.master.us.kg",
+    "default": "http://javbus.img.master.us.kg"
+  },
+  "image_proxy_mode": {
+    "type": "string",
+    "description": "图片代理模式",
+    "hint": "replace=域名替换; query=?url=原图链接",
+    "default": "replace"
+  },
+  "use_nodes": {
+    "type": "bool",
+    "description": "是否优先使用 Nodes 转发",
+    "default": true
+  }
+}

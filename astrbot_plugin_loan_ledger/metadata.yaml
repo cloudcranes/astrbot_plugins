@@ -1,0 +1,6 @@
+﻿name: astrbot_plugin_loan_ledger
+desc: 借款记录与分段计息插件（自动抓取官方1年期LPR）
+version: 0.1.0
+author: cloudcranes
+repo: https://github.com/cloudcranes/astrbot_plugins/astrbot_plugin_loan_ledger
+display_name: 借款记录账本

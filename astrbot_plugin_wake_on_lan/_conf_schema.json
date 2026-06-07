@@ -1,0 +1,36 @@
+{
+  "whitelist": {
+    "type": "list",
+    "description": "用户白名单，允许使用唤醒功能的用户ID",
+    "hint": "留空则允许所有人使用",
+    "default": []
+  },
+  "storage_type": {
+    "type": "string",
+    "description": "设备存储类型",
+    "options": ["local", "redis"],
+    "default": "redis"
+  },
+  "redis_host": {
+    "type": "string",
+    "description": "Redis 服务器地址",
+    "hint": "仅在 storage_type 为 redis 时生效",
+    "default": "127.0.0.1"
+  },
+  "redis_port": {
+    "type": "int",
+    "description": "Redis 端口",
+    "default": 6379
+  },
+  "redis_password": {
+    "type": "string",
+    "description": "Redis 密码",
+    "hint": "留空则不需要密码",
+    "default": ""
+  },
+  "redis_db": {
+    "type": "int",
+    "description": "Redis 数据库编号",
+    "default": 0
+  }
+}
