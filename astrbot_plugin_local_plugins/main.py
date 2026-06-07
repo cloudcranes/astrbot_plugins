@@ -7,9 +7,10 @@ from astrbot.core.star.filter.command_group import CommandGroupFilter
 
 @register(
     "astrbot_plugin_local_plugins",
-    "tinker",
+    "cloudcranes",
     "查询已加载插件的名称、版本、作者、描述、命令等信息",
     "1.2.0",
+    "https://github.com/cloudcranes/astrbot_plugins/astrbot_plugin_local_plugins",
 )
 class LocalPluginsQuery(Star):
     def __init__(self, context: Context, config: dict = None):

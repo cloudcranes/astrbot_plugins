@@ -29,7 +29,13 @@ FILE_TYPE_MAP = {
 }
 
 
-@register("Magnet Previewer", "cloudcranesss", "预览磁力链接", "1.0.0")
+@register(
+    "Magnet Previewer",
+    "cloudcranes",
+    "预览磁力链接",
+    "1.0.0",
+    "https://github.com/cloudcranes/astrbot_plugins/astrbot_plugin_magnet_preview",
+)
 class MagnetPreviewer(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
         super().__init__(context)

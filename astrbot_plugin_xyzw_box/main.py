@@ -16,7 +16,13 @@ from astrbot.api import logger, AstrBotConfig
 from astrbot.core.star.filter.event_message_type import EventMessageType
 
 
-@register("咸鱼之王-宝箱识别", "cloudcranesss", "通过OCR识别咸鱼之王游戏中的宝箱数量", "1.0.2")
+@register(
+    "咸鱼之王-宝箱识别",
+    "cloudcranes",
+    "通过OCR识别咸鱼之王游戏中的宝箱数量",
+    "1.0.2",
+    "https://github.com/cloudcranes/astrbot_plugins/astrbot_plugin_xyzw_box",
+)
 class BaoXiangPlugin(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
         super().__init__(context)

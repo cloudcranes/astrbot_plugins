@@ -48,13 +48,13 @@ DEFAULT_TIMEOUT = ClientTimeout(total=15)
 
     "video_parse",
 
-    "cloudcranesss",
+    "cloudcranes",
 
     "解析多平台分享链接，提取视频/图集信息",
 
     "2.0.0",
 
-    "https://github.com/cloudcranesss/astrbot_plugins/astrbot_plugin_video_parse",
+    "https://github.com/cloudcranes/astrbot_plugins/astrbot_plugin_video_prase",
 
 )
 

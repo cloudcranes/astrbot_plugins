@@ -14,8 +14,8 @@ except ImportError:
     redis = None
 
 
-@register("Wake-on-LAN", "cloudcranesss", "通过发送魔术包唤醒局域网内的设备", "1.0.0",
-          "https://github.com/cloudcranesss/astrbot_plugins/astrbot_plugin_wake_on_lan")
+@register("Wake-on-LAN", "cloudcranes", "通过发送魔术包唤醒局域网内的设备", "1.0.0",
+          "https://github.com/cloudcranes/astrbot_plugins/astrbot_plugin_wake_on_lan")
 class WakeOnLan(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
         super().__init__(context)

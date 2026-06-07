@@ -6,8 +6,8 @@ from astrbot.api.star import Context, Star, register
 from astrbot.api import logger, AstrBotConfig
 
 
-@register("Pip Manager", "cloudcranesss", "管理 pip 包，支持安装、卸载、查看等操作", "1.0.0",
-          "https://github.com/cloudcranesss/astrbot_plugins/astrbot_plugin_pip_manager")
+@register("Pip Manager", "cloudcranes", "管理 pip 包，支持安装、卸载、查看等操作", "1.0.0",
+          "https://github.com/cloudcranes/astrbot_plugins/astrbot_plugin_pip_manager")
 class PipManager(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
         super().__init__(context)
