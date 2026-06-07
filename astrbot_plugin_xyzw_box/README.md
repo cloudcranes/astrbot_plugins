@@ -17,7 +17,7 @@
 
 ### 1. 克隆插件仓库
 ```bash
-git clone https://github.com/cloudcranesss/astrbot_plugin_xyzw_box.git
+git clone https://github.com/cloudcranes/astrbot_plugins.git
 cp -r astrbot_plugin_xyzw_box /AstrBot/data/plugins/
 ```
 
@@ -108,18 +108,18 @@ docker restart astrbot
 
 ## 开发者信息
 
-- **作者**：cloudcranesss
+- **作者**：cloudcranes
 - **版本**：1.0.1
 - **更新日期**：2025-06-14
-- **GitHub仓库**：[https://github.com/cloudcranesss/astrbot_plugin_xyzw_box](https://github.com/cloudcranesss/astrbot_plugin_xyzw_box)
-- **问题反馈**：[Issues](https://github.com/cloudcranesss/astrbot_plugin_xyzw_box/issues)
+- **GitHub仓库**：[https://github.com/cloudcranes/astrbot_plugins/tree/main/astrbot_plugin_xyzw_box](https://github.com/cloudcranes/astrbot_plugins/tree/main/astrbot_plugin_xyzw_box)
+- **问题反馈**：[Issues](https://github.com/cloudcranes/astrbot_plugins/issues)
 
 ## 开源协议
 
 本项目采用 [MIT 开源协议](LICENSE) - 自由使用、修改和分发，需保留原始作者信息。
 
 ```
-Copyright (c) 2025 cloudcranesss
+Copyright (c) 2025 cloudcranes
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
