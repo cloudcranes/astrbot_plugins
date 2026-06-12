@@ -9,7 +9,7 @@
     "type": "string",
     "description": "设备存储类型",
     "options": ["local", "redis"],
-    "default": "redis"
+    "default": "local"
   },
   "redis_host": {
     "type": "string",

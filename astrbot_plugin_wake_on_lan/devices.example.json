@@ -1,5 +1,5 @@
-﻿{
-  "example": {
+{
+  "客厅电脑": {
     "mac": "AA:BB:CC:DD:EE:FF",
     "broadcast": "255.255.255.255",
     "port": 9

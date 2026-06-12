@@ -8,15 +8,16 @@
 - 支持添加/删除设备
 - 支持用户白名单限制
 - 查看设备列表
+- 支持本地 JSON 或 Redis 存储
 
 ## 指令
 
 | 指令 | 说明 |
 |------|------|
 | `/wake` | 显示帮助信息 |
-| `/wake ls` | 查看已配置的设备 |
+| `/wake ls` | 查看已配置的设备（MAC 会脱敏显示） |
 | `/wake on <设备名>` | 唤醒指定设备 |
-| `/wake add <设备名> <MAC>` | 添加新设备 |
+| `/wake add <设备名> <MAC> [广播地址] [端口]` | 添加新设备 |
 | `/wake del <设备名>` | 删除设备 |
 
 ## 配置
@@ -29,6 +30,28 @@
 whitelist: [123456789, 987654321]
 ```
 留空则允许所有人使用。
+
+白名单会限制 `/wake ls`、`/wake on`、`/wake add`、`/wake del`。
+
+### 存储方式
+
+默认使用本地文件：
+
+```yaml
+storage_type: local
+```
+
+本地数据文件为插件目录下的 `devices.json`，这是运行时配置文件，请勿上传公开仓库。
+
+如需使用 Redis：
+
+```yaml
+storage_type: redis
+redis_host: 127.0.0.1
+redis_port: 6379
+redis_password: ""
+redis_db: 0
+```
 
 ### 设备列表
 
@@ -54,4 +77,10 @@ whitelist: [123456789, 987654321]
 
 ## 依赖
 
-无需额外依赖，仅使用 Python 标准库。
+本地文件存储无需额外依赖。
+
+使用 Redis 存储时需要安装：
+
+```bash
+pip install "redis>=4.0.0"
+```
