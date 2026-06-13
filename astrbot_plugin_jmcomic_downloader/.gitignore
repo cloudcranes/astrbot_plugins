@@ -1,0 +1,6 @@
+op.yml
+downloads/
+pdf/
+tasks.json
+__pycache__/
+*.py[cod]

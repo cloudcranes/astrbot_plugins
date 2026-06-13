@@ -12,6 +12,7 @@
 | --- | --- | --- | --- |
 | [`astrbot_plugin_ip_parser`](https://github.com/cloudcranes/astrbot_plugins/tree/main/astrbot_plugin_ip_parser) | IP 地址解析与归属地 | `0.2.0` | IPv4/IPv6 地址解析与运营商归属地查询插件 |
 | [`astrbot_plugin_javbus_api`](https://github.com/cloudcranes/astrbot_plugins/tree/main/astrbot_plugin_javbus_api) | JavBus API 解析器 | `0.1.0` | 基于 javbus-api 的 JavBus 解析插件 |
+| [`astrbot_plugin_jmcomic_downloader`](https://github.com/cloudcranes/astrbot_plugins/tree/main/astrbot_plugin_jmcomic_downloader) | JMComic Downloader | `0.1.0` | 按 JM album id 下载漫画，复用本地 PDF 缓存，上传 OpenList 后通过 URL 发送 |
 | [`astrbot_plugin_loan_ledger`](https://github.com/cloudcranes/astrbot_plugins/tree/main/astrbot_plugin_loan_ledger) | 借款记录账本 | `0.1.0` | 借款记录与分段计息插件，支持自动抓取官方 1 年期 LPR |
 | [`astrbot_plugin_local_plugins`](https://github.com/cloudcranes/astrbot_plugins/tree/main/astrbot_plugin_local_plugins) | 本地插件查询 | `v1.0.0` | 查询已加载插件的名称、版本、作者、描述等信息 |
 | [`astrbot_plugin_magnet_preview`](https://github.com/cloudcranes/astrbot_plugins/tree/main/astrbot_plugin_magnet_preview) | Magnet Previewer | `1.2.0` | 预览磁力链接，并支持确认后下载 |
@@ -38,5 +39,6 @@ pip install -r /AstrBot/data/plugins/<插件目录>/requirements.txt
 ## 注意事项
 
 - 每个插件的具体命令、配置项和示例请查看对应目录下的 `README.md`。
+- `astrbot_plugin_jmcomic_downloader` 依赖 JM 账号密码和 OpenList 配置；生成的 `op.yml`、下载目录和 PDF 缓存不会上传，`/jm clean all` 可清理本地缓存和 OpenList `album_*` 目录。
 - `astrbot_plugin_wake_on_lan/devices.json` 属于本地运行配置，不会上传；仓库中仅提供 `devices.example.json` 示例。
 - 上传或更新本仓库时，只发布作者为 `cloudcranes` 的插件。

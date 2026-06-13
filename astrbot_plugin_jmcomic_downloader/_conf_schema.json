@@ -1,0 +1,99 @@
+{
+  "whitelist": {
+    "type": "list",
+    "description": "下载白名单用户 ID。管理员默认允许；为空时仅管理员可下载、取消和清理",
+    "hint": "例如 [\"123456789\"]",
+    "default": []
+  },
+  "auto_install_dependencies": {
+    "type": "bool",
+    "description": "运行时缺少 jmcomic/img2pdf 时自动安装 requirements.txt",
+    "default": true
+  },
+  "download_dir": {
+    "type": "string",
+    "description": "漫画图片下载根目录。留空使用插件数据目录 downloads",
+    "default": ""
+  },
+  "retention_days": {
+    "type": "int",
+    "description": "下载文件和 PDF 保留天数",
+    "default": 7
+  },
+  "max_send_mb": {
+    "type": "int",
+    "description": "保留项。当前使用 OpenList URL 发送，不按本地文件大小限制发送",
+    "default": 100
+  },
+  "max_concurrent_downloads": {
+    "type": "int",
+    "description": "最大并发下载任务数",
+    "default": 1
+  },
+  "app_domain": {
+    "type": "string",
+    "description": "可选 JM APP/API 域名覆盖。留空使用 jmcomic 默认 APP 域名",
+    "hint": "例如 jm-comic2.cc，不要填写 web/html 域名",
+    "default": ""
+  },
+  "jm_username": {
+    "type": "string",
+    "description": "JM 账号，用于 APP/API 登录",
+    "default": ""
+  },
+  "jm_password": {
+    "type": "string",
+    "description": "JM 密码，用于 APP/API 登录。会写入本地 op.yml，请勿上传",
+    "default": ""
+  },
+  "proxy": {
+    "type": "string",
+    "description": "可选代理地址",
+    "hint": "例如 http://127.0.0.1:7890",
+    "default": ""
+  },
+  "cookies": {
+    "type": "string",
+    "description": "可选 Cookie，仅写入本地 op.yml，不会上传仓库",
+    "hint": "例如 AVS=xxx; token=yyy",
+    "default": ""
+  },
+  "openlist_base_url": {
+    "type": "string",
+    "description": "OpenList 站点地址，用于上传 PDF",
+    "hint": "例如 http://127.0.0.1:5244",
+    "default": ""
+  },
+  "openlist_public_base_url": {
+    "type": "string",
+    "description": "公开访问地址。留空使用 openlist_base_url 拼接 /d/ 文件路径",
+    "hint": "例如 https://files.example.com",
+    "default": ""
+  },
+  "openlist_token": {
+    "type": "string",
+    "description": "OpenList API token。优先使用；留空则用账号密码登录获取",
+    "default": ""
+  },
+  "openlist_username": {
+    "type": "string",
+    "description": "OpenList 用户名。openlist_token 留空时使用",
+    "default": ""
+  },
+  "openlist_password": {
+    "type": "string",
+    "description": "OpenList 密码。openlist_token 留空时使用，请勿上传",
+    "default": ""
+  },
+  "openlist_upload_dir": {
+    "type": "string",
+    "description": "PDF 上传到 OpenList 的目录",
+    "hint": "例如 /jmcomic",
+    "default": "/jmcomic"
+  },
+  "openlist_cleanup_on_clean": {
+    "type": "bool",
+    "description": "执行 /jm clean 时同步清理 OpenList 上超过 retention_days 的 album 目录",
+    "default": true
+  }
+}
